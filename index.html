@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Inclusión</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:#f5f5f5;
+            color:#333;
+        }
+
+        header{
+            background: linear-gradient(135deg,#7b68ee,#9f8cff,#c4b5fd);
+            color:white;
+            padding:60px 10%;
+        }
+
+        .header-contenido{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            gap:40px;
+            flex-wrap:wrap;
+        }
+
+        .texto-header{
+            flex:1;
+            min-width:300px;
+        }
+
+        .texto-header h1{
+            font-size:55px;
+            margin-bottom:20px;
+        }
+
+        .texto-header p{
+            font-size:20px;
+            line-height:1.8;
+        }
+
+        .imagen-header{
+            flex:1;
+            text-align:center;
+        }
+
+        .imagen-header img{
+            width:100%;
+            max-width:500px;
+            border-radius:20px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        nav{
+            background:#5b4bc4;
+            padding:15px;
+            text-align:center;
+            position:sticky;
+            top:0;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#ffd6ff;
+        }
+
+        .contenedor{
+            width:90%;
+            margin:auto;
+            padding:50px 0;
+        }
+
+        .fila{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            gap:50px;
+            margin-bottom:80px;
+            flex-wrap:wrap;
+        }
+
+        .texto{
+            flex:1;
+            min-width:300px;
+        }
+
+        .texto h2{
+            color:#6c63ff;
+            font-size:40px;
+            margin-bottom:20px;
+        }
+
+        .texto p{
+            line-height:1.8;
+            font-size:18px;
+            text-align:justify;
+        }
+
+        .texto ul{
+            padding-left:20px;
+            line-height:2;
+            font-size:18px;
+        }
+
+        .imagen{
+            flex:1;
+            text-align:center;
+        }
+
+        .imagen img{
+            width:100%;
+            max-width:500px;
+            border-radius:20px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        footer{
+            background:#333;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+
+        @media(max-width:900px){
+
+            .fila{
+                flex-direction:column;
+            }
+
+            .header-contenido{
+                flex-direction:column;
+                text-align:center;
+            }
+
+            .texto-header h1{
+                font-size:40px;
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+
+        <div class="header-contenido">
+
+            <div class="texto-header">
+                <h1>Hacerca De La Inclusión</h1>
+
+                <p>
+                    La inclusión busca que todas las personas sean respetadas y tengan las mismas oportunidades sin importar sus diferencias. 
+                    Gracias a la inclusión se fomenta el respeto, la igualdad y la convivencia en la sociedad.
+                </p>
+            </div>
+
+            <div class="imagen-header">
+                <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=900&q=80">
+            </div>
+
+        </div>
+
+    </header>
+
+    <nav>
+
+        <a href="#quees">¿Qué es?</a>
+        <a href="#importancia">Importancia</a>
+        <a href="#tipos">Tipos</a>
+        <a href="#escuela">Escuela</a>
+        <a href="#conclusion">Conclusión</a>
+
+    </nav>
+
+    <div class="contenedor">
+
+        <section class="fila" id="quees">
+
+            <div class="texto">
+
+                <h2>¿Qué es la inclusión?</h2>
+
+                <p>
+                    La inclusión es un valor muy importante que busca que todas las personas sean aceptadas, respetadas y tengan las mismas oportunidades sin importar sus diferencias, como su forma de pensar, su cultura, género, discapacidad, apariencia o situación económica. La inclusión ayuda a crear una sociedad más justa y unida, donde todos puedan participar y sentirse parte de un grupo sin ser discriminados o excluidos.
+                </p>
+
+            </div>
+
+            <div class="imagen">
+                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80">
+            </div>
+
+        </section>
+
+        <section class="fila" id="importancia">
+
+            <div class="imagen">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80">
+            </div>
+
+            <div class="texto">
+
+                <h2>¿Por qué es importante la inclusión?</h2>
+
+                <p>
+                    La inclusión es importante porque permite que todas las personas se sientan valoradas, respetadas y aceptadas dentro de la sociedad. Además, ayuda a evitar la discriminación y fomenta valores como el respeto, la empatía y la solidaridad.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="fila" id="tipos">
+
+            <div class="texto">
+
+                <h2>Estos Son Los Tipos de inclusión</h2>
+
+                <p>
+                    Existen diferentes tipos de inclusión como la educativa, social, laboral y cultural. Todas buscan que las personas puedan convivir y participar sin ser excluidas.
+                </p>
+
+                <ul>
+                    <li>Inclusión educativa</li>
+                    <li>Inclusión social</li>
+                    <li>Inclusión laboral</li>
+                    <li>Inclusión cultural</li>
+                     <li>etc.</li>
+                </ul>
+
+            </div>
+
+            <div class="imagen">
+                <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80">
+            </div>
+
+        </section>
+
+        <section class="fila" id="escuela">
+
+            <div class="imagen">
+                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=80">
+            </div>
+
+            <div class="texto">
+
+                <h2>La Inclusión en la escuela</h2>
+
+                <p>
+                    La inclusión en la escuela permite que todos los estudiantes aprendan y convivan juntos sin importar sus diferencias. También fomenta el respeto, la empatía y el trabajo en equipo.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="fila" id="conclusion">
+
+            <div class="texto">
+
+                <h2>Conclusión</h2>
+
+                <p>
+                    En conclusión, la inclusión es fundamental para construir una sociedad más justa y respetuosa. Practicar la inclusión ayuda a fortalecer valores importantes y permite una mejor convivencia entre las personas.
+                </p>
+
+            </div>
+
+            <div class="imagen">
+                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=80">
+            </div>
+
+        </section>
+
+    </div>
+
+    <footer>
+
+        <p>Página sobre la inclusión | 2026 |Creada Por Castañeda Medina Osman Gabriel|2L1|NL5</p>
+<p>esta es la evidencia profe que tal quedo </p>
+    </footer>
+
+</body>
+</html>
